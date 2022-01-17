@@ -17,6 +17,11 @@
     grid-template-areas:
       "head sidebar"
       "body sidebar";
+    thead {
+      grid-area: head;
+      display: table;
+      align-self: end;
+    }
     > .discourse-top-contributors {
       overflow: hidden;
       display: block;
@@ -32,7 +37,6 @@
       .top-contributors-heading {
         font-size: 1.5em;
         padding: 0.2em;
-        //background: #FAF9F8;
         border-bottom: 1px solid #D2D5D9;
       }
       .top-contributors-container-contributor {
