@@ -23,7 +23,7 @@ export default {
               .then(response => response.json())
               .then(data => {
                 component.set("hideSidebar", false);
-                this.set("topContributors", data.directory_items.slice(1, 6));
+                this.set("topContributors", data.directory_items.slice(0, 5));
               });
             } else {
               component.set("isDiscoveryList", false);
