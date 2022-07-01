@@ -1,7 +1,4 @@
 import { withPluginApi } from "discourse/lib/plugin-api";
-import { ajax } from "discourse/lib/ajax";
-
-const container = Discourse.__container__;
 
 export default {
   setupComponent(attrs, component) {
@@ -10,8 +7,7 @@ export default {
 
     if (!this.site.mobileView) {
       withPluginApi("0.11", (api) => {
-        api.onPageChange((url) => {
-
+        api.onPageChange(() => {
           if (settings.enable_top_contributors) {
             if (this.discoveryList) {
               if (this.isDestroyed || this.isDestroying) {
