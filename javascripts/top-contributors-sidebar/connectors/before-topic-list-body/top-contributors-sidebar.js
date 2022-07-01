@@ -16,11 +16,11 @@ export default {
               component.set("isDiscoveryList", true);
 
               fetch(`/directory_items.json?period=yearly&order=likes_received`)
-              .then(response => response.json())
-              .then(data => {
-                component.set("hideSidebar", false);
-                this.set("topContributors", data.directory_items.slice(0, 5));
-              });
+                .then((response) => response.json())
+                .then((data) => {
+                  component.set("hideSidebar", false);
+                  this.set("topContributors", data.directory_items.slice(0, 5));
+                });
             } else {
               component.set("isDiscoveryList", false);
             }

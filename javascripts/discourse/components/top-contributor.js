@@ -10,6 +10,5 @@ export default Component.extend({
     User.findByUsername(this.data.user.username).then((user) => {
       this.set("user", user);
     });
-  }
-
+  },
 });
