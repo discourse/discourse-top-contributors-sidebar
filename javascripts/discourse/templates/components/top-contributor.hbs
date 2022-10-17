@@ -1,6 +1,19 @@
 <div class="top-contributors-container-contributor">
   <div class="top-contributors-container-contributor-name">
-    <span data-user-card="{{user.username}}" class="user">{{avatar user avatarTemplatePath="avatar_template" usernamePath="username" namePath="name" imageSize="small"}} {{html-safe user.username}}</span>
+    <span data-user-card={{user.username}} class="user">
+      {{avatar
+        user
+        avatarTemplatePath="avatar_template"
+        usernamePath="username"
+        namePath="name"
+        imageSize="small"
+      }}
+      {{html-safe user.username}}
+    </span>
   </div>
-  <div class="top-contributors-container-contributor-likes">{{d-icon "heart"}} {{likes}}</div>
+
+  <div class="top-contributors-container-contributor-likes">
+    {{d-icon "heart"}}
+    {{likes}}
+  </div>
 </div>

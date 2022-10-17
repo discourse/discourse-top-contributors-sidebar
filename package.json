@@ -1,0 +1,10 @@
+{
+  "name": "discourse-top-contributors",
+  "version": "1.0.0",
+  "repository": "https://github.com/discourse/discourse-top-contributors-sidebar",
+  "author": "Discourse",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "^3.2.0"
+  }
+}
