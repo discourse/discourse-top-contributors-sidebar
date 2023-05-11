@@ -8,7 +8,11 @@
         namePath="name"
         imageSize="small"
       }}
-      {{html-safe user.username}}
+      {{#if (and (theme-setting "use_full_name") user.name)}}
+        {{user.name}}
+      {{else}}
+        {{html-safe user.username}}
+      {{/if}}
     </span>
   </div>
 

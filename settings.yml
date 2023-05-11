@@ -1,2 +1,6 @@
 enable_top_contributors:
   default: true
+
+use_full_name:
+  default: false
+  description: "Replace username with full name (if provided)"
