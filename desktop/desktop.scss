@@ -45,16 +45,21 @@
         img.avatar {
           margin-right: 5px;
         }
-        .top-contributors-container-contributor-name .user {
-          margin: 0;
+        .top-contributors-container-contributor-name {
           text-overflow: ellipsis;
           overflow: hidden;
-          white-space: nowrap;
-          width: 70%;
-          cursor: pointer;
+          .user {
+            margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 70%;
+            cursor: pointer;
+          }
         }
         .top-contributors-container-contributor-likes {
           margin-left: auto;
+          white-space: nowrap;
           .fa {
             fill: var(--love);
           }
