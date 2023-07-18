@@ -4,3 +4,15 @@ enable_top_contributors:
 use_full_name:
   default: false
   description: "Replace username with full name (if provided)"
+excluded_group_names:
+  type: list
+  default: ""
+  list_type: compact
+  description: "Groups that should not be included in the top contributors list"
+  refresh: true
+order_by:
+  type: enum
+  default: "likes_received"
+  choices:
+    - likes_given
+    - likes_received
