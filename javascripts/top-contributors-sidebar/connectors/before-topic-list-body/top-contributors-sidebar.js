@@ -12,6 +12,10 @@ const fetchDirectoryItems = (settings, component) => {
     .then((data) => {
       component.set("hideSidebar", false);
       component.set("topContributors", data.directory_items);
+      component.set(
+        "viewAllPath",
+        `/u?order=${settings.order_by}&period=yearly`
+      );
     });
 };
 

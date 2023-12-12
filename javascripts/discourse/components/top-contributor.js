@@ -6,7 +6,7 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-    this.set("likes", this.data.likes_received);
+    this.set("likes", this.data[settings.order_by]);
     User.findByUsername(this.data.user.username).then((user) => {
       this.set("user", user);
     });
