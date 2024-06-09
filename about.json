@@ -1,7 +1,7 @@
 {
-  "name": "Discourse Top Contributors Sidebar",
+  "name": "Top Contributors Sidebar",
   "component": true,
   "author": "Meghna",
-  "about_url": "",
-  "license_url": ""
+  "about_url": "https://meta.discourse.org/t/top-contributors-sidebar/215110",
+  "license_url": "https://github.com/discourse/discourse-top-contributors-sidebar/blob/main/LICENSE"
 }
