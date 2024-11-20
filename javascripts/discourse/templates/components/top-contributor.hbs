@@ -1,23 +1,23 @@
 <div class="top-contributors-container-contributor">
   <div class="top-contributors-container-contributor-name">
-    <span data-user-card={{user.username}} class="user">
+    <span data-user-card={{this.user.username}} class="user">
       {{avatar
-        user
+        this.user
         avatarTemplatePath="avatar_template"
         usernamePath="username"
         namePath="name"
         imageSize="small"
       }}
-      {{#if (and (theme-setting "use_full_name") user.name)}}
-        {{user.name}}
+      {{#if (and (theme-setting "use_full_name") this.user.name)}}
+        {{this.user.name}}
       {{else}}
-        {{html-safe user.username}}
+        {{html-safe this.user.username}}
       {{/if}}
     </span>
   </div>
 
   <div class="top-contributors-container-contributor-likes">
     {{d-icon "heart"}}
-    {{likes}}
+    {{this.likes}}
   </div>
 </div>

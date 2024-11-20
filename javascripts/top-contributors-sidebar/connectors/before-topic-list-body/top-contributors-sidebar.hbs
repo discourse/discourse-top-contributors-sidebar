@@ -1,18 +1,18 @@
-{{#unless site.mobileView}}
-  {{#if isDiscoveryList}}
-    {{#unless hideSidebar}}
+{{#unless this.site.mobileView}}
+  {{#if this.isDiscoveryList}}
+    {{#unless this.hideSidebar}}
       <div class="discourse-top-contributors">
         <h1 class="top-contributors-heading">
           {{theme-i18n "top_contributors.title"}}
         </h1>
 
         <div class="top-contributors-container">
-          {{#each topContributors as |user|}}
+          {{#each this.topContributors as |user|}}
             {{top-contributor data=user}}
           {{/each}}
 
           <div class="top-contributors-container-link">
-            <a href={{viewAllPath}}>
+            <a href={{this.viewAllPath}}>
               {{theme-i18n "top_contributors.view_all"}}
             </a>
           </div>
