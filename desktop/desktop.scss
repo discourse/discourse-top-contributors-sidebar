@@ -5,43 +5,49 @@
     align-items: start;
     grid-template-rows: 50px auto;
     grid-template-columns: 75% 23%;
+
     @media screen and (max-width: 900px) {
       grid-template-columns: 82% 16%;
     }
     grid-template-areas:
       "head sidebar"
       "body sidebar";
+
     thead {
       grid-area: head;
       display: table;
       align-self: end;
     }
+
     > .discourse-top-contributors {
       overflow: hidden;
       display: block;
       margin-top: 15px;
       grid-area: sidebar;
-      padding: 1em;
       border: 1px solid var(--primary-low);
       padding: 1em;
       width: 100%;
       border-radius: 6px;
-      box-shadow: 0px 0px 6px -2px rgba(var(--primary-rgb), 0.25);
+      box-shadow: 0 0 6px -2px rgba(var(--primary-rgb), 0.25);
 
       .top-contributors-heading {
         font-size: 1.5em;
         padding: 0.2em;
         border-bottom: 1px solid #d2d5d9;
       }
+
       .top-contributors-container-contributor {
         display: flex;
         padding: 0.5em 0.25em;
+
         img.avatar {
           margin-right: 5px;
         }
+
         .top-contributors-container-contributor-name {
           text-overflow: ellipsis;
           overflow: hidden;
+
           .user {
             margin: 0;
             text-overflow: ellipsis;
@@ -51,15 +57,18 @@
             cursor: pointer;
           }
         }
+
         .top-contributors-container-contributor-likes {
           margin-left: auto;
           white-space: nowrap;
+
           .fa {
             fill: var(--love);
           }
         }
       }
     }
+
     tbody {
       grid-area: body;
       display: table;
@@ -71,6 +80,7 @@
   #list-area .show-more.has-topics .alert {
     box-sizing: border-box;
     width: 75%;
+
     @media screen and (max-width: 900px) {
       width: 73%;
     }
