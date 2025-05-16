@@ -39,6 +39,10 @@ export default {
 
     withPluginApi("0.11", (api) => {
       api.onPageChange(() => {
+        if (component.isDestroying || component.isDestroyed) {
+          return;
+        }
+
         component.set("isDiscoveryList", !!this.discoveryList);
         fetchDirectoryItems(settings, component);
       });
