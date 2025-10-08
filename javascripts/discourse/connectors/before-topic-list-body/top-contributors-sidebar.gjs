@@ -43,7 +43,7 @@ export default class TopContributorsSidebar extends Component {
       return;
     }
 
-    withPluginApi("0.11", (api) => {
+    withPluginApi((api) => {
       api.onPageChange(() => {
         if (this.isDestroying || this.isDestroyed) {
           return;
