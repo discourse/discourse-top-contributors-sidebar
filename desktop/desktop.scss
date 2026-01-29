@@ -1,7 +1,7 @@
 @media screen and (width >= 767px) {
   #list-area > .contents > .topic-list {
     display: grid;
-    grid-column-gap: 2%;
+    column-gap: 2%;
     align-items: start;
     grid-template-rows: 50px auto;
     grid-template-columns: 75% 23%;
