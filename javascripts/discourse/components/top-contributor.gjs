@@ -1,10 +1,11 @@
+/* eslint-disable ember/no-classic-components */
 import Component from "@ember/component";
 import { htmlSafe } from "@ember/template";
 import { tagName } from "@ember-decorators/component";
-import { and } from "truth-helpers";
 import avatar from "discourse/helpers/avatar";
 import icon from "discourse/helpers/d-icon";
 import User from "discourse/models/user";
+import { and } from "discourse/truth-helpers";
 
 @tagName("")
 export default class TopContributor extends Component {
